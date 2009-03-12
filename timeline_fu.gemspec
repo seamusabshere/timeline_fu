@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.files = ["README.rdoc", "VERSION.yml", "generators/timeline_fu", "generators/timeline_fu/templates", "generators/timeline_fu/templates/migration.rb", "generators/timeline_fu/templates/model.rb", "generators/timeline_fu/timeline_fu_generator.rb", "generators/timeline_fu/USAGE", "lib/timeline_fu", "lib/timeline_fu/fires.rb", "lib/timeline_fu.rb", "test/fires_test.rb", "test/test_helper.rb"]
   s.homepage = %q{http://github.com/giraffesoft/timeline_fu}
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.1}
+  s.rubygems_version = %q{1.3.2}
   s.summary = %q{Easily build timelines, much like GitHub's news feed}
 
   if s.respond_to? :specification_version then
