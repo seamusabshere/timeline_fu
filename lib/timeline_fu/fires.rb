@@ -21,9 +21,10 @@ module TimelineFu
             memo
           end
           create_options[:event_type] = event_type.to_s
-          create_options[:type] = "#{event_type.to_s.camelcase}TimelineEvent".constantize
+          t = TimelineEvent.new(create_options)
+          t.type = "#{event_type.to_s.camelcase}TimelineEvent"
 
-          TimelineEvent.create!(create_options)
+          t.save!
         end
 
         send(:"after_#{opts[:on]}", method_name, :if => opts[:if])
